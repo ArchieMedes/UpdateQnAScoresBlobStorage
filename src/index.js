@@ -13,7 +13,7 @@ app.use(express.json()); // para soportar formatos json por parte de mi servidor
 
 // ROUTES
 app.use('/test', require('./routes/index')); //http://localhost:3002/test
-app.use('/api/updateQnAScores', require('./routes/index')); //http://localhost:3002/test
+app.use('/api/updateQnAScores', require('./routes/updateQnAScores')); //http://localhost:3002/api/updateQnAScores
 
 // starting server
 app.listen(app.get('port'), () => {
