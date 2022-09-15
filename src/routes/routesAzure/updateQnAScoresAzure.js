@@ -43,7 +43,7 @@ module.exports = async function (context, req) {
             context.res = {
                 body: {
                     response: {
-                        "code": 00,
+                        "code": "00",
                         "message": "Éxito al actualizar el valor de los puntajes en el azure table storage"
                     }
                 }
@@ -52,7 +52,7 @@ module.exports = async function (context, req) {
             context.res = {
                 body: {
                     response: {
-                        "code": 01,
+                        "code": "01",
                         "message": "Error al actualizar el valor de los puntajes en el azure table storage"
                     }
                 }
@@ -72,7 +72,7 @@ module.exports = async function (context, req) {
         context.res = {
             body: {
                 response: {
-                    "code": 02,
+                    "code": "02",
                     "message": "Error al conectarse a la tabla de azure storage"
                 }
             }

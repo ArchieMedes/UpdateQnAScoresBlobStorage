@@ -35,7 +35,7 @@ router.post('/', async (req, res) => {
                 // Error writing message to Azure table
                 let webServiceResponse = {
                     "response": {
-                        "code": 01,
+                        "code": "01",
                         "message": "Error al actualizar el valor de los puntajes en el azure table storage"
                     }
                 }
@@ -45,7 +45,7 @@ router.post('/', async (req, res) => {
                 // Success writting on Azure Table
                 let webServiceResponse = {
                     "response": {
-                        "code": 00,
+                        "code": "00",
                         "message": "Éxito al actualizar el valor de los puntajes en el azure table storage"
                     }
                 }
@@ -61,7 +61,7 @@ router.post('/', async (req, res) => {
         console.log("error:", error);
         let webServiceResponse = {
             "response": {
-                "code": 02,
+                "code": "02",
                 "message": "Error al conectarse a la tabla de azure storage"
             }
         }
